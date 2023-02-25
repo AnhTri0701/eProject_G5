@@ -1,0 +1,441 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="style.css">
+    <link href="https://fonts.googleapis.com/css2?family=Passion+One:wght@700&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.4.1/css/bootstrap.min.css">
+    <link rel="stylesheet" href="bootstrap.min.css">
+    <title>Clarins Cosmetics</title>
+</head>
+
+<body>
+    <section id="content">
+        <div class="menu_top">
+            <img src="./image cosmetics/clarins-logo-black-and-white.png" alt="">
+            <ul style="color: black;">
+                <li><a href="home.html">Home</a></li>
+                <li><a href="index.html">Store</a></li>
+                <li><a href="./aboutus.html">About Us</a></li>
+            </ul>
+            <div class="contact">
+                <i class="fa fa-phone" aria-hidden="true"></i>
+                <span>+123 456 789</span>
+            </div>
+            <div class="button">
+                <i class="fa fa-shopping-cart" aria-hidden="true"></i>
+                <span>
+                    <span class="count">0</span> Items - $ <span class="priceProduct">0</span>
+                </span>
+            </div>
+            <div class="shoppingCart" style="display: none;">
+                <h1 class="notification" style="font-size: 2rem; padding: 1rem 0; display: block;">
+                    You not buy anything !
+                </h1>
+            </div>
+        </div>
+
+        <h3 class="name" style="font-size: 50px;">Welcome To <b>Clarins Cosmetics</b></h3>
+        <div class="btn" style="font-size: 30px;">Explore</div>
+    </section>
+    <!-- filter div -->
+    <section id="filter">
+        <h3 class="our" style="font-size: 50px;">Our <b>Store</b></h3>
+        <div id="filter_button" style="font-size: 50px;">
+            <a class="btn btn-primary active" data-filter="best">Best Seller</a>
+            <a class="btn btn-primary" data-filter="all">All</a>
+            <a class="btn btn-primary" data-filter="sunscreen">Sunscreen</a>
+            <a class="btn btn-primary" data-filter="face">Face</a>
+            <a class="btn btn-primary" data-filter="body">Body</a>
+            <a class="btn btn-primary" data-filter="hair">Hair</a>
+            <a class="btn btn-primary" data-filter="makeup">Makeup</a>
+            <a class="btn btn-primary" data-filter="perfumes">Perfumes</a>
+            <a class="btn btn-primary" data-filter="offer">Flash Sale</a>
+        </div>
+        <form action="" id="input_filter">
+            <span>
+                <i class="fa fa-search" aria-hidden="true"></i>
+            </span>
+            <input type="text" placeholder="filter item ..." id="search-item" autocomplete="off">
+        </form>
+
+        <div id="filter-data">
+            <div class="element_cosmetics" data-item="perfumes">
+                <img src="./image cosmetics/perfumes1-Nước Hoa Mini Versace Eros EDT 5ml.webp" class="gallery-item"
+                    alt="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Versace Eros</h1>
+                    <h1 class="price">1.99$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="perfumes">
+                <img src="./image cosmetics/perfumes2-Nước Hoa Mini Versace Bright Crystal 5ml.webp"
+                    class="gallery-item" alt="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Versace Bright</h1>
+                    <h1 class="price">2.90$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="perfumes">
+                <img src="./image cosmetics/perfumes4-Nước hoa mini Versace Pour Homme 5ml.webp" class="gallery-item"
+                    alt="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Versace Pour</h1>
+                    <h1 class="price">1.50$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="face">
+                <img src="./image cosmetics/Kem Mắt Clarins Extra-Firming Yeux 3ml.webp" class="gallery-item"
+                    alt="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Eye Cream</h1>
+                    <h1 class="price">1.55$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="face">
+                <img src="./image cosmetics/Lão Hóa Clarins Trial Extra- Firming Essence 50ml - E.webp"
+                    class="gallery-item" alt="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Clarins Trial</h1>
+                    <h1 class="price">1.99$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="body">
+                <img src="./image cosmetics/Combo 2 Tẩy Tế Bào Chết Dạng Hạt Clarins Comfort Scrub Nourishing Oil Scrub 15mlx2.webp"
+                    alt="" class="gallery-item">
+                <div class="infor">
+                    <h1 class="name_item">Kill death celk</h1>
+                    <h1 class="price">2.99$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="sunscreen">
+                <img src="./image cosmetics/Sunscreen.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Sunscreen</h1>
+                    <h1 class="price">1.70$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="body">
+                <img src="./image cosmetics/Dưỡng thể.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Body Care</h1>
+                    <h1 class="price">2.45$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="hair">
+                <img src="./image cosmetics/dầu gội L'oreal.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Shampoo</h1>
+                    <h1 class="price">1.33$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="hair">
+                <img src="./image cosmetics/dầu gội.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Shampoo</h1>
+                    <h1 class="price">1.35$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="hair">
+                <img src="./image cosmetics/dầu xả.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Conditioner</h1>
+                    <h1 class="price">1.22$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="face">
+                <img src="./image cosmetics/face.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Kem Duong</h1>
+                    <h1 class="price">1.25$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="sunscreen">
+                <img src="./image cosmetics/Garnier.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Garnier</h1>
+                    <h1 class="price">1.20$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="sunscreen">
+                <img src="./image cosmetics/Loreal Paris.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Loreal Paris</h1>
+                    <h1 class="price">1.40$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="sunscreen">
+                <img src="./image cosmetics/L’oreal Perfect.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">L’oreal Perfect</h1>
+                    <h1 class="price">1.60$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="sunscreen">
+                <img src="./image cosmetics/Summer UV Spray.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Summer Spray</h1>
+                    <h1 class="price">1.10$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="body">
+                <img src="./image cosmetics/body1-Ohui Miracle.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Ohui Miracle</h1>
+                    <h1 class="price">1.59$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="body">
+                <img src="./image cosmetics/body2-Advanced Night.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Advanced Night</h1>
+                    <h1 class="price">1.47$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="body">
+                <img src="./image cosmetics/Extreme White-body3.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Extreme White</h1>
+                    <h1 class="price">1.30$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup1-Phấn Phủ.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Powder</h1>
+                    <h1 class="price">1.25$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup2-Eye Brow.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Eye Brow</h1>
+                    <h1 class="price">1.30$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup3-Whoo Jinyulhyang.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Jinyulhyang</h1>
+                    <h1 class="price">1.98$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup4-Brightening BB.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Brightening BB</h1>
+                    <h1 class="price">1.88$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup5-Radiant White.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Radiant White</h1>
+                    <h1 class="price">1.67$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup6-Gongjinhyang Mi.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Gongjinhyang</h1>
+                    <h1 class="price">1.95$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="best">
+                <img src="./image cosmetics/perfumes1-Nước Hoa Mini Versace Eros EDT 5ml.webp" class="gallery-item"
+                    alt="">
+                <div class="infor">
+                    <h1 class="name_item">Versace Eros</h1>
+                    <h1 class="price">1.99$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="best">
+                <img src="./image cosmetics/perfumes4-Nước hoa mini Versace Pour Homme 5ml.webp" class="gallery-item"
+                    alt="">
+                <div class="infor">
+                    <h1 class="name_item">Versace Pour</h1>
+                    <h1 class="price">1.50$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="best">
+                <img src="./image cosmetics/makeup1-Phấn Phủ.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Powder</h1>
+                    <h1 class="price">1.25$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="best">
+                <img src="./image cosmetics/Extreme White-body3.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Extreme White</h1>
+                    <h1 class="price">1.30$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="best">
+                <img src="./image cosmetics/Summer UV Spray.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Summer Spray</h1>
+                    <h1 class="price">1.10$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="offer">
+                <img src="./image cosmetics/Lão Hóa Clarins Trial Extra- Firming Essence 50ml - E.webp"
+                    class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Clarins Trial</h1>
+                    <h1 class="price">1.99$ -> 1.00$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="offer">
+                <img src="./image cosmetics/makeup1-Phấn Phủ.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Powder</h1>
+                    <h1 class="price">1.25$ -> 85$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="offer">
+                <img src="./image cosmetics/perfumes4-Nước hoa mini Versace Pour Homme 5ml.webp" class="gallery-item"
+                    alt="">
+                <div class="infor">
+                    <h1 class="name_item">Versace Pour</h1>
+                    <h1 class="price">1.50$ -> 80$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/makeup5-Radiant White.webp" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Radiant White</h1>
+                    <h1 class="price">1.67$ -> 1.20$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/Dior Rouge.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Dior Rouge</h1>
+                    <h1 class="price">76$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/Dior Addict.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Dior Addict</h1>
+                    <h1 class="price">86$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/Rouge Hermès.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Rouge Hermès</h1>
+                    <h1 class="price">96$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/Shu Uemura.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Shu Uemura</h1>
+                    <h1 class="price">66$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <div class="element_cosmetics" data-item="makeup">
+                <img src="./image cosmetics/Dior Rouge.jpg" class="gallery-item" alt="">
+                <div class="infor">
+                    <h1 class="name_item">Dior Rouge</h1>
+                    <h1 class="price">76$</h1>
+                </div>
+                <button class="buy fa fa-shopping-cart"></button>
+            </div>
+            <h1 id="showtext"></h1>
+        </div>
+    </section>
+    <!-- Modal -->
+    <div class="modal fade" id="gallery-modal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+        <div class="modal-dialog modal-dialog-centered modal-lg">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+                </div>
+                <div class="modal-body">
+                    <img src="./image cosmetics/makeup5-Radiant White.webp" class="modal-img" alt="modal img">
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-secondary" data-bs-dismiss="modal">Close</button>
+                    <button type="button" class="btn btn-primary">Buy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <script src="bootstrap.bundle.min.js"></script>
+    <script src="javascript.js"></script>
+</body>
+<footer>
+    <div class="row1">
+        <div class="box">
+            <div class="box1">
+                <h4>FOLLOW US</h4>
+                <i class="fa fa-instagram" style="font-size:36px"></i>
+                <i class="fa fa-facebook-f" style="font-size:36px"></i>
+                <i class="fa fa-youtube-play" style="font-size:36px"></i>
+            </div>
+            <div class="box2" style="font-size: 18px;">
+                <h4>CUSTOMER CARE</h4>
+                <a class="add" href="#">Sales policy</a>
+                <a class="add" href="#">Warranty Policy</a>
+                <a class="add" href="#">Delivery policy</a>
+            </div>
+            <div class="box3" style="font-size: 18px;">
+                <h4>CONTACT US</h4>
+                <a href="#" class="add" style="color: black;">Clarins@gmail.com</a>
+                <div class="add">Store I: 51 Dang Dung, Tan Dinh ward, Distric 1</div>
+                <div class="add">Store II: 5 Luong Huu Khanh, Pham Ngu Lao ward, Distric 1</div>
+                <div class="add">Store III: 473 Nguyen Dinh chieu, 2 ward, Distric 3</div>
+                <div class="add">Store IV: 17 So 41, 6 ward, Distric 4</div>
+            </div>
+        </div>
+    </div>
+    <div class="row_textcenter">
+        ©Clarins. All Rights Reserved
+    </div>
+</footer>
+
+</html>
