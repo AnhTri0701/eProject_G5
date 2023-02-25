@@ -33,3 +33,5 @@
 =======================================
 
 - link publish: https://anhtri0701.github.io/eProject_G5/
+
+thank for your reviewing.
